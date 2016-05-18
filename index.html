@@ -121,21 +121,33 @@
 
 <h3>HTML:</h3>
 
-<pre><code>&lt;div id="ad"&gt;&lt;!-- the ad content will be written here --&gt;&lt;/div&gt;
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;ad&quot;</span><span class="o">&gt;</span><span class="c">&lt;!--</span> <span class="nx">the</span> <span class="nx">ad</span> <span class="nx">content</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">written</span> <span class="nx">here</span> <span class="o">--&gt;&lt;</span><span class="err">/div&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">&lt;!--</span> <span class="nx">postscribe</span> <span class="nx">files</span> <span class="o">--&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;htmlParser/htmlParser.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;postscribe.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-&lt;!-- postscribe files --&gt;
-&lt;script src="htmlParser/htmlParser.js"&gt;&lt;/script&gt;
-&lt;script src="postscribe.js"&gt;&lt;/script&gt;
-</code></pre>
 
 <h3>JS:</h3>
 
-<pre><code>(function (win) {
-        var adCode = '&lt;script&gt;document.write("ad unit");&lt;/script&gt;';
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">win</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">adCode</span> <span class="o">=</span> <span class="s1">&#39;&lt;script&gt;document.write(&quot;ad unit&quot;);&lt;/script&gt;&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">postscribe</span><span class="p">(</span><span class="s1">&#39;#ad&#39;</span><span class="p">,</span> <span class="nx">adCode</span><span class="p">);</span>
+</span><span class='line'><span class="p">}(</span><span class="nb">window</span><span class="p">));</span>
+</span></code></pre></td></tr></table></div></figure>
 
-        postscribe('#ad', adCode);
-}(window));
-</code></pre>
 
 <p>Simple right?!</p>
 </div>

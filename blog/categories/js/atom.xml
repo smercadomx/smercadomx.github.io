@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Js | Sergio Mercado]]></title>
   <link href="http://smercadomx.github.io/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://smercadomx.github.io/"/>
-  <updated>2016-05-17T20:35:22-07:00</updated>
+  <updated>2016-05-17T20:55:44-07:00</updated>
   <id>http://smercadomx.github.io/</id>
   <author>
     <name><![CDATA[Sergio Mercado]]></name>
@@ -30,21 +30,36 @@
 
 <h3>HTML:</h3>
 
-<pre><code>&lt;div id="ad"&gt;&lt;!-- the ad content will be written here --&gt;&lt;/div&gt;
+<p>``` javascript</p>
 
-&lt;!-- postscribe files --&gt;
-&lt;script src="htmlParser/htmlParser.js"&gt;&lt;/script&gt;
-&lt;script src="postscribe.js"&gt;&lt;/script&gt;
-</code></pre>
+<div id="ad"><!-- the ad content will be written here --></div>
+
+
+
+
+<!-- postscribe files -->
+
+
+<script src="htmlParser/htmlParser.js"></script>
+
+
+<script src="postscribe.js"></script>
+
+
+<p>```</p>
 
 <h3>JS:</h3>
 
-<pre><code>(function (win) {
-        var adCode = '&lt;script&gt;document.write("ad unit");&lt;/script&gt;';
+<p>``` javascript
+(function (win) {</p>
 
-        postscribe('#ad', adCode);
-}(window));
+<pre><code>var adCode = '&lt;script&gt;document.write("ad unit");&lt;/script&gt;';
+
+postscribe('#ad', adCode);
 </code></pre>
+
+<p>}(window));
+```</p>
 
 <p>Simple right?!</p>
 ]]></content>
