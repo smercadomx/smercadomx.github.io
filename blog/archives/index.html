@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Sergio Mercado</title>
+  <title>Blog Archive - Sergio Mercado</title>
   <meta name="author" content="Sergio Mercado">
 
   
-  <meta name="description" content="The Problem Most of the ads come with document.write statements, and we all know what happens when we try to execute document.write statements after &hellip;">
+  <meta name="description" content=" Blog Archive 2014 How to Load Ads Asynchronously
+May 26 2014 posted in js Recent Posts How to Load Ads Asynchronously ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://smercadomx.github.io">
+  <link rel="canonical" href="http://smercadomx.github.io/blog/archives">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Sergio Mercado" type="application/atom+xml">
@@ -75,82 +76,40 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/05/26/how-to-load-ads-asynchronously/">How to Load Ads Asynchronously</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-26T12:54:12-07:00" pubdate data-updated="true">May 26<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/05/26/how-to-load-ads-asynchronously/#disqus_thread"
-             data-disqus-identifier="http://smercadomx.github.io/blog/2014/05/26/how-to-load-ads-asynchronously/">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Blog Archive</h1>
     
   </header>
+  
+  <div id="blog-archives">
 
 
-  <div class="entry-content"><h2>The Problem</h2>
 
-<p>Most of the ads come with document.write statements, and we all know what happens when we try to execute document.write statements after the page has been loaded.</p>
+  
+  <h2>2014</h2>
 
-<h2>The Solution</h2>
+<article>
+  
+<h1><a href="/blog/2014/05/26/how-to-load-ads-asynchronously/">How to Load Ads Asynchronously</a></h1>
+<time datetime="2014-05-26T12:54:12-07:00" pubdate><span class='month'>May</span> <span class='day'>26</span> <span class='year'>2014</span></time>
 
-<p>postscribe is a JS library that ensures the content is written as close to the way the browser would natively write the content with document.write/innerHTML, and it does it asynchronously!.</p>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/js/'>js</a></span>
+</footer>
 
-<h2>The Implementation</h2>
 
-<h3>HTML:</h3>
+</article>
 
-<pre><code>&lt;div id="ad"&gt;&lt;!-- the ad content will be written here --&gt;&lt;/div&gt;
-
-&lt;!-- postscribe files --&gt;
-&lt;script src="htmlParser/htmlParser.js"&gt;&lt;/script&gt;
-&lt;script src="postscribe.js"&gt;&lt;/script&gt;
-</code></pre>
-
-<h3>JS:</h3>
-
-<pre><code>(function (win) {
-        var adCode = '&lt;script&gt;document.write("ad unit");&lt;/script&gt;';
-
-        postscribe('#ad', adCode);
-}(window));
-</code></pre>
-
-<p>Simple right?!</p>
 </div>
-  
-  
 
-
-    </article>
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+</article>
+
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -170,6 +129,7 @@
 
   
 </aside>
+
 
     </div>
   </div>

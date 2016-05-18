@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Sergio Mercado]]></title>
+  <link href="http://smercadomx.github.io/atom.xml" rel="self"/>
+  <link href="http://smercadomx.github.io/"/>
+  <updated>2016-05-17T20:35:22-07:00</updated>
+  <id>http://smercadomx.github.io/</id>
+  <author>
+    <name><![CDATA[Sergio Mercado]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Load Ads Asynchronously]]></title>
+    <link href="http://smercadomx.github.io/blog/2014/05/26/how-to-load-ads-asynchronously/"/>
+    <updated>2014-05-26T12:54:12-07:00</updated>
+    <id>http://smercadomx.github.io/blog/2014/05/26/how-to-load-ads-asynchronously</id>
+    <content type="html"><![CDATA[<h2>The Problem</h2>
+
+<p>Most of the ads come with document.write statements, and we all know what happens when we try to execute document.write statements after the page has been loaded.</p>
+
+<h2>The Solution</h2>
+
+<p>postscribe is a JS library that ensures the content is written as close to the way the browser would natively write the content with document.write/innerHTML, and it does it asynchronously!.</p>
+
+<h2>The Implementation</h2>
+
+<h3>HTML:</h3>
+
+<pre><code>&lt;div id="ad"&gt;&lt;!-- the ad content will be written here --&gt;&lt;/div&gt;
+
+&lt;!-- postscribe files --&gt;
+&lt;script src="htmlParser/htmlParser.js"&gt;&lt;/script&gt;
+&lt;script src="postscribe.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>JS:</h3>
+
+<pre><code>(function (win) {
+        var adCode = '&lt;script&gt;document.write("ad unit");&lt;/script&gt;';
+
+        postscribe('#ad', adCode);
+}(window));
+</code></pre>
+
+<p>Simple right?!</p>
+]]></content>
+  </entry>
+  
+</feed>
