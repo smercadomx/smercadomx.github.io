@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Js | Sergio Mercado]]></title>
   <link href="http://smercadomx.github.io/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://smercadomx.github.io/"/>
-  <updated>2016-05-17T20:58:26-07:00</updated>
+  <updated>2016-05-17T21:15:12-07:00</updated>
   <id>http://smercadomx.github.io/</id>
   <author>
     <name><![CDATA[Sergio Mercado]]></name>
@@ -20,7 +20,7 @@
     <id>http://smercadomx.github.io/blog/2014/05/26/how-to-load-ads-asynchronously</id>
     <content type="html"><![CDATA[<h2>The Problem</h2>
 
-<p>Most of the ads come with document.write statements, and we all know what happens when we try to execute document.write statements after the page has been loaded.</p>
+<p>Most ads come with document.write statements, and we all know what happens when we try to execute them after the page has been loaded.</p>
 
 <h2>The Solution</h2>
 
@@ -32,12 +32,12 @@
 
 <p>``` html</p>
 
-<div id="ad"><!-- the ad content will be written here --></div>
+<div id="ad"><!-- ad content will be written here --></div>
 
 
 
 
-<!-- postscribe files -->
+<!-- postscribe scripts -->
 
 
 <script src="htmlParser/htmlParser.js"></script>
@@ -61,7 +61,7 @@ postscribe('#ad', adCode);
 <p>}(window));
 ```</p>
 
-<p>Simple right?!</p>
+<p>Simple, right?!</p>
 ]]></content>
   </entry>
   
