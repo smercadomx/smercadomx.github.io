@@ -16,17 +16,21 @@ postscribe is a JS library that ensures the content is written as close to the w
 The Implementation
 -----------------
 ### HTML:
-	<div id="ad"><!-- the ad content will be written here --></div>
+``` javascript
+<div id="ad"><!-- the ad content will be written here --></div>
 
-	<!-- postscribe files -->
-	<script src="htmlParser/htmlParser.js"></script>
-	<script src="postscribe.js"></script>
+<!-- postscribe files -->
+<script src="htmlParser/htmlParser.js"></script>
+<script src="postscribe.js"></script>
+```
 
 ### JS:
-	(function (win) {
-    		var adCode = '<script>document.write("ad unit");</script>';
+``` javascript
+(function (win) {
+	var adCode = '<script>document.write("ad unit");</script>';
 
-    		postscribe('#ad', adCode);
-	}(window));
+	postscribe('#ad', adCode);
+}(window));
+```
 
 Simple right?!
