@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Js | Sergio Mercado]]></title>
   <link href="http://smercadomx.github.io/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://smercadomx.github.io/"/>
-  <updated>2016-05-17T20:55:44-07:00</updated>
+  <updated>2016-05-17T20:58:26-07:00</updated>
   <id>http://smercadomx.github.io/</id>
   <author>
     <name><![CDATA[Sergio Mercado]]></name>
@@ -30,7 +30,7 @@
 
 <h3>HTML:</h3>
 
-<p>``` javascript</p>
+<p>``` html</p>
 
 <div id="ad"><!-- the ad content will be written here --></div>
 
