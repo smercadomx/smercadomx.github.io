@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://zerghiomario.github.io
-title: Sergio Varela
+url: http://smercadomx.github.io
+title: Sergio Mercado
 subtitle: Writing about Web Development.
-author: Sergio Varela
+author: Sergio Mercado
 simple_search: https://www.google.com/search
 description:
 
@@ -61,12 +61,6 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
-
-# Github repositories
-github_user: zerghiomario
-github_repo_count: 4
-github_show_profile_link: true
-github_skip_forks: true
 
 # Twitter
 twitter_user: zerghiovarela
