@@ -16,7 +16,7 @@ postscribe is a JS library that ensures the content is written as close to the w
 The Implementation
 -----------------
 ### HTML:
-``` javascript
+``` html
 <div id="ad"><!-- the ad content will be written here --></div>
 
 <!-- postscribe files -->
